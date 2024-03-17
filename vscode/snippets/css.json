@@ -1,0 +1,11 @@
+{
+	"CSS snipett: nth-child": {
+		"prefix": "cdn",
+		"body": [
+			"&:nth-child(${1:n}) {",
+			"\t${2}",
+			"}"
+		],
+		"description": ""
+	}
+}

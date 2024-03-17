@@ -1,0 +1,223 @@
+{
+  // Editor
+  "editor.tabSize": 2,
+  "editor.minimap.renderCharacters": false, // ミニマップの表示文字をブロックに変更
+  "editor.minimap.showSlider": "always", // マウスでの複数選択時の修飾キーを変更
+  "editor.renderControlCharacters": true, // 制御文字を表示
+  "editor.renderLineHighlight": "all", // 半角スペースを常に表示
+  "editor.snippetSuggestions": "top", // Emmet の候補を表示
+  "editor.minimap.enabled": false,
+  "editor.find.loop": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderWhitespace": "boundary",
+  "editor.fontFamily": "'源ノ角ゴシック Code JP N'",
+  "editor.detectIndentation": false,
+  "editor.useTabStops": false,
+  "editor.autoClosingDelete": "always",
+  "editor.hover.delay": 1500,
+  "editor.formatOnSave": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.accessibilitySupport": "off",
+  "editor.guides.bracketPairs": true,
+  // Workbench
+  "workbench.editor.closeEmptyGroups": false,
+  "workbench.colorTheme": "Monokai Pro (Filter Machine)",
+  "workbench.editor.labelFormat": "short", // タブに表示する文字列の設定
+  "workbench.editor.tabSizing": "shrink", // タブの表示設定
+  "workbench.startupEditor": "none",
+  "workbench.colorCustomizations": {},
+  "workbench.iconTheme": "Monokai Pro (Filter Machine) Icons",
+  // Emmet
+  "emmet.triggerExpansionOnTab": true, // TAB キーで Emmet を展開できるようにする
+  "emmet.variables": { // Emmet で展開される HTML の言語を変更
+    "lang": "ja"
+  },
+  "emmet.preferences": {
+    "filter.commentAfter": "<!-- /[#ID][.CLASS] -->"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "ejs": "html",
+    "postcss": "css"
+  },
+  "emmet.showSuggestionsAsSnippets": true,
+  // Git
+  "git.ignoreLimitWarning": true,
+  "git.autofetch": true,
+  // Files
+  "files.associations": { // ファイルと言語の関連付けを変更
+    ".*lintrc": "json",
+    "*.svg": "html",
+    "*.mdx": "markdown",
+  },
+  "files.useExperimentalFileWatcher": true,
+  "files.exclude": { // エクスプローラーから非表示にするファイル
+    "**/*.map": true,
+    "**/node_modules": true
+  },
+  // HTML
+  "html.format.contentUnformatted": "pre, code, textarea, title, h1, h2, h3, h4, h5, h6, p", // タグ内の記述はフォーマットしない
+  "html.format.extraLiners": "", // head, body, /html タグの前に改行を入れない
+  "html.format.unformatted": null, // フレージング・コンテンツ（旧インライン要素のようなタグ）はフォーマットしない
+  "html.format.wrapLineLength": 0, // 行の文字数制限を無くし自動で改行させない
+  // Window
+  "window.openFoldersInNewWindow": "on", // 新規ワークスペースを別ウインドウで開く
+  "window.title": "${activeEditorMedium}${separator}${rootName}", // ウインドウ上部に表示する文字列の設定
+  "window.openFilesInNewWindow": "on",
+  // Insert br Tag
+  "insert-br-tag.enableOnLanguage": [
+    "php",
+    "html",
+    "astro",
+    "typescriptreact"
+  ],
+  // todo-tree
+  "todo-tree.regex.regex": "(//|#|<!--|;|/?\\*|^|^[ \\t]*(-|\\d+.))\\s*($TAGS)",
+  "todo-tree.general.tags": [
+    "@todo",
+    "TODO",
+    "FIXME"
+  ],
+  // Stylelint
+  "stylelint.enable": true,
+  "stylelint.validate": [
+    "css",
+    "scss"
+  ],
+  // Validate
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  // ESLint
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "astro", // Enable .astro
+    "typescript", // Enable .ts
+    "typescriptreact" // Enable .tsx
+  ],
+  // Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.requireConfig": true, // 設定ファイルを優先,
+  // Gitlens
+  "gitlens.views.searchAndCompare.files.layout": "list",
+  "gitlens.views.repositories.files.layout": "tree",
+  "gitlens.views.repositories.includeWorkingTree": true,
+  "gitlens.views.repositories.showUpstreamStatus": false,
+  // CSV Preview
+  "csv-preview.formatValues": "never",
+  // Lang options
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false // Markdown のファイルは行末の空白をトリミングしない
+  },
+  "[scss]": {
+    "editor.formatOnSave": false
+  },
+  "[html]": {
+    "editor.formatOnSave": false
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  // tailwindCSS
+  "tailwindCSS.classAttributes": [
+    "class",
+    "class:list",
+    "className",
+    "clsx",
+    "classnames"
+  ],
+  "tailwindCSS.experimental.classRegex": [
+    [
+      "clsx\\(([^)]*)\\)",
+      "(?:'|\"|`)([^']*)(?:'|\"|`)"
+    ]
+  ],
+  // Other
+  "security.workspace.trust.untrustedFiles": "open",
+  "sync.gist": "4ad12b8657b7c42c93fb5bb7e13adaca",
+  "diffEditor.renderSideBySide": false, // ホバーしたときに出る解説を消す
+  "diffEditor.ignoreTrimWhitespace": false,
+  "explorer.confirmDelete": false, // ファイル削除時の確認を表示しない
+  "search.exclude": { // 検索対象外にするファイル設定（ files.exclude のファイルも含む）
+    "**/tmp": true
+  },
+  // OpenInExternalApp
+  "openInExternalApp.openMapper": [
+    // {
+    //     // represent file extension name
+    //     "extensionName": "html",
+    //     // the external applications to open the file which extension name is html
+    //     "apps": [
+    //         // openCommand can be shell command or the complete executable application path
+    //         // title will be shown in the drop list if there are several apps
+    //         {
+    //             "title": "chrome",
+    //             "openCommand": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+    //         },
+    //         {
+    //             "title": "firefox",
+    //             "openCommand": "C:\\Program Files\\Firefox Developer Edition\\firefox.exe",
+    //             // open in firefox under private mode
+    //             "args": ["-private-window"]
+    //         }
+    //     ]
+    // },
+    {
+      "extensionName": "psd",
+      "apps": [
+        {
+          "title": "Photoshop",
+          "openCommand": "/Applications/Adobe Photoshop 2022/Adobe Photoshop 2022.app"
+        },
+        {
+          "title": "Preview",
+          "openCommand": "/System/Applications/Preview.app"
+        }
+      ]
+    },
+    {
+      "extensionName": "svg",
+      "apps": [
+        {
+          "title": "Illustrator",
+          "openCommand": "/Applications/Adobe Illustrator 2023/Adobe Illustrator.app"
+        },
+        {
+          "title": "Preview",
+          "openCommand": "/System/Applications/Preview.app"
+        }
+      ]
+    },
+    {
+      "extensionName": "html",
+      "apps": [
+        {
+          "title": "Chrome",
+          "openCommand": "/Applications/Google Chrome.app"
+        }
+      ]
+    }
+  ],
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "update.mode": "manual",
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "editor.wordWrap": "on",
+  "gitlens.gitCommands.skipConfirmations": [
+    "fetch:command",
+    "switch:command",
+    "stash-push:command"
+  ],
+  "githubPullRequests.fileListLayout": "flat",
+  "githubIssues.issueBranchTitle": "feature/issue#${issueNumber}",
+  "githubIssues.workingIssueFormatScm": "${issueTitle} ${issueNumberLabel}",
+}

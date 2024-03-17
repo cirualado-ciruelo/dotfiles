@@ -1,0 +1,29 @@
+{
+  "title": "caps_lock カスタマイズ",
+  "rules": [
+    {
+      "description": "caps_lock -> 第5の装飾キー「left_control + right_option + right_command + right_shift」",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock"
+          },
+          "to": [
+            {
+              "key_code": "left_control",
+              "modifiers": [
+                "right_option",
+                "right_command",
+                "right_shift"
+              ]
+            }
+          ],
+          "to_if_alone": [
+            {"key_code": "return_or_enter"}
+          ]
+        }
+      ]
+    }
+  ]
+}

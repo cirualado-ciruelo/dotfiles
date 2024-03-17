@@ -1,0 +1,107 @@
+{
+	"SCSS snipett: media query": {
+		"prefix": "mq",
+		"body": [
+			"@include mq(${1:maxL}) {",
+			"	${2}",
+			"}"
+		],
+		"description": ""
+	},
+	"SCSS snipett: svg import": {
+		"prefix": "svg",
+		"body": [
+			"svg-load('../svg/${1:file}.svg', fill=${2:color})"
+		],
+		"description": ""
+	},
+	"SCSS snipett: old svg import": {
+		"prefix": "osvg",
+		"body": [
+			"svg(${1}, color)"
+		],
+		"description": ""
+	},
+	"SCSS snipett: background image": {
+		"prefix": "bgi",
+		"body": [
+			"background-image: url(../images/${1});",
+			"background-position: ${2:center};",
+			"background-repeat: ${3:no-repeat};",
+			"background-size: ${4:cover};"
+		],
+		"description": ""
+	},
+	"SCSS snipett: comment 1": {
+		"prefix": "cmt1",
+		"body": [
+			"/**",
+			" * ${1}",
+			" */"
+		],
+		"description": ""
+	},
+	"SCSS snipett: nth-child": {
+		"prefix": "cdn",
+		"body": [
+			"&:nth-child(${1:n}) {",
+			"\t${2}",
+			"}"
+		],
+		"description": ""
+	},
+	"SCSS snipett: nth-child-nn": {
+		"prefix": "cdnn",
+		"body": [
+			"&:not(:nth-child(${1:-n+n})) {",
+			"\t${2}",
+			"}"
+		],
+		"description": ""
+	},
+	"SCSS snipett: first-child": {
+		"prefix": "cdf",
+		"body": [
+			"&:first-child {",
+			"\t${2}",
+			"}"
+		],
+		"description": ""
+	},
+	"SCSS snipett: not-first-child": {
+		"prefix": "cdnf",
+		"body": [
+			"&:not(:first-child) {",
+			"\t${2}",
+			"}"
+		],
+		"description": ""
+	},
+	"SCSS snipett: last-child": {
+		"prefix": "cdl",
+		"body": [
+			"&:last-child {",
+			"\t${2}",
+			"}"
+		],
+		"description": ""
+	},
+	"SCSS snipett: ::before": {
+		"prefix": "before",
+		"body": [
+			"@include before(a1, '') {",
+			"	${1}",
+			"}"
+		],
+		"description": ""
+	},
+	"SCSS snipett: ::after": {
+		"prefix": "after",
+		"body": [
+			"@include after(a1, '') {",
+			"	${1}",
+			"}"
+		],
+		"description": ""
+	}
+}

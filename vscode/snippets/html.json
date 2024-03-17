@@ -1,0 +1,88 @@
+{
+  "HTML snippet: img": {
+    "prefix": "himg",
+    "body": [
+      "<img class=\"${1:className}\"",
+      "     src=\"./assets/images/${2:fileName}.${3:jpg}\"",
+      "     alt=\"${4:alt}\">"
+    ]
+  },
+  "HTML snippet: button": {
+    "prefix": "hbtn",
+    "body": [
+      "<button class=\"${1:className}\"",
+      "        type=\"${2:button}\"",
+      "        data-${3:hoge}=\"${4:fuga}\">",
+      "\t${5:content}",
+      "</button>"
+    ]
+  },
+  "HTML snippet: a": {
+    "prefix": "ha",
+    "body": [
+      "<a class=\"${1:className}\"",
+      "   href=\"${2:#}\">",
+      "\t${3:content}",
+      "</a>"
+    ]
+  },
+  "HTML snippet: a new window": {
+    "prefix": "hab",
+    "body": [
+      "<a class=\"${1:className}\"",
+      "   target=\"_blank\"",
+      "   rel=\"noopener noreferrer\"",
+      "   href=\"${2:#}\">",
+      "\t${3:content}",
+      "</a>"
+    ]
+  },
+  "EJS snippet: img": {
+    "prefix": "ejimg",
+    "body": [
+      "<img class=\"${1:className}\"",
+      "     src=\"<%= images %>/${2:fileName}.${3:jpg}\"",
+      "     alt=\"${4:alt}\">"
+    ]
+  },
+  "EJS snippet: class": {
+    "prefix": "ejclass",
+    "body": [
+      "<%- __c([",
+      "  \"${1:className}\"",
+      "]); %>",
+    ]
+  },
+  "PHP snippet: img tag": {
+    "prefix": "pimg",
+    "body": [
+      "<img",
+      "  class=\"${1:className}\"",
+      "  src=\"<?php echo THEME_IMG_URL; ?>/${2:fileName}.${3:jpg}\"",
+      "  alt=\"${4:alt}\"",
+      ">"
+    ]
+  },
+  "PHP snippet: echo": {
+    "prefix": "pecho",
+    "body": [
+      "<?php echo ${1:something}; ?>"
+    ]
+  },
+  "PHP snippet: nphp": {
+    "prefix": ";nphp",
+    "body": [
+      "<?php",
+      "",
+      "$1",
+      "",
+      "?>",
+    ],
+  },
+  "PHP snippet: php": {
+    "prefix": ";php",
+    "body": [
+      "<?php $1 ?>",
+    ],
+  },
+}

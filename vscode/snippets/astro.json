@@ -1,0 +1,12 @@
+{
+  "JS snippet: disable eslint comment": {
+    "prefix": "esdis",
+    "body": "{ /* eslint-disable-next-line */ }"
+  },
+  "HTML snippet: has class:list div": {
+    "prefix": "..",
+    "body": [
+      "<${2:div} class:list={[\"${1:className}\"]}${3}>${4:contents}</div>",
+    ]
+  },
+}

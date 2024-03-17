@@ -1,0 +1,100 @@
+{
+	"PHP snippet: print_r": {
+		"prefix": ";printr",
+		"body": [
+			"echo '<pre>';",
+			"print_r( $2 );",
+			"echo '</pre>';"
+		],
+		"description": "print_r"
+	},
+	"PHP snippet: array": {
+		"prefix": ";ar",
+		"body": [
+			"array(",
+			"\t'$1' => $2,",
+			")$3",
+		],
+	},
+	"PHP snippet: if": {
+		"prefix": ";if",
+		"body": [
+			"if ( $1 ) {",
+			"\t$2",
+			"}",
+		],
+	},
+	"PHP snippet: tif": {
+		"prefix": ";tif",
+		"body": [
+			"if ( $1 ) :",
+			"",
+			"\t?>",
+			"\t$2",
+			"\t<?php",
+			"",
+			"endif;",
+		],
+	},
+	"PHP snippet: foreach": {
+		"prefix": ";fe",
+		"body": [
+			"foreach ( $1 as $2 ) {",
+			"\t$3",
+			"}",
+		],
+	},
+	"PHP snippet: tforeach": {
+		"prefix": ";tfe",
+		"body": [
+			"foreach ( $1 as $2 ) :",
+			"",
+			"\t?>",
+			"\t$3",
+			"\t<?php",
+			"",
+			"endforeach;",
+		],
+	},
+	"PHP snippet: while": {
+		"prefix": ";wh",
+		"body": [
+			"while ( $1 ) {",
+			"\t$2",
+			"",
+			"\t$3",
+			"}",
+		],
+	},
+	"PHP snippet: twhile": {
+		"prefix": ";twh",
+		"body": [
+			"while ( $1 ) :",
+			"\t$2",
+			"",
+			"\t?>",
+			"\t$3",
+			"\t<?php",
+			"",
+			"endwhile;",
+		],
+	},
+	"PHP snippet: endif": {
+		"prefix": ";ei",
+		"body": [
+			"endif;",
+		],
+	},
+	"PHP snippet: endforeach": {
+		"prefix": ";efe",
+		"body": [
+			"endforeach;",
+		],
+	},
+	"PHP snippet: endwhile": {
+		"prefix": ";ew",
+		"body": [
+			"endwhile;",
+		],
+	},
+}
