@@ -8,7 +8,13 @@ $ cd dotfiles && make
 
 ## Set HHKB.
 
-Install driver [here](https://happyhackingkb.com/jp/download/macdownload.html).
+`wget https://origin.pfultd.com/downloads/hhkb/driver/HHKBProDriver5.1.dmg`
+
+## Set Google IME.
+
+1. PC Restart.
+2. Add JA and EN in input keybord.
+3. Delete default IME.
 
 ## Set visual studio code.
 
@@ -20,7 +26,10 @@ Install driver [here](https://happyhackingkb.com/jp/download/macdownload.html).
 
 ## Set Karabiner.
 
-1. Execute "cd dotfiles && ./karabiner/sync.sh".
+1. Lunch App.
+2. `open /Library/Application\ Support/org.pqrs/Karabiner-Elements/bin/`
+3. Add security.
+4. Execute "cd dotfiles && ./karabiner/sync.sh".
 
 ## Set raycast.
 

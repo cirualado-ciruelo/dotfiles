@@ -65,8 +65,8 @@ chflags nohidden ~/Library
 # defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
 
-# for app in "Dock" \
-# 	"Finder" \
-# 	"SystemUIServer"; do
-# 	killall "${app}" &> /dev/null
-# done
+for app in "Dock" \
+	"Finder" \
+	"SystemUIServer"; do
+	killall "${app}" &> /dev/null
+done
