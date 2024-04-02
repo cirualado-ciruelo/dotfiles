@@ -92,7 +92,7 @@
   "scss.validate": false,
   // ESLint
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll": "explicit"
   },
   "eslint.validate": [
     "javascript",

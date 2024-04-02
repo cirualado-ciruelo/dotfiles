@@ -64,6 +64,16 @@ chflags nohidden ~/Library
 # Display battery level in the menu bar
 # defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
+# ====================
+#
+# ScreenCapture
+#
+# ====================
+
+defaults write com.apple.screencapture name SS
+defaults write com.apple.screencapture type jpg
+defaults write com.apple.screencapture location ~/Works/screenshots
+
 
 for app in "Dock" \
 	"Finder" \
