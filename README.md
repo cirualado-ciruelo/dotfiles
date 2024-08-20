@@ -3,6 +3,7 @@
 ## Set macOS.
 
 ```shell
+$ xcode-select --install
 $ cd dotfiles && make
 ```
 
