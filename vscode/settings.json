@@ -1,5 +1,7 @@
 {
+  //
   // Editor
+  //
   "editor.tabSize": 2,
   "editor.minimap.renderCharacters": false, // ミニマップの表示文字をブロックに変更
   "editor.minimap.showSlider": "always", // マウスでの複数選択時の修飾キーを変更
@@ -14,14 +16,18 @@
   "editor.detectIndentation": false,
   "editor.useTabStops": false,
   "editor.autoClosingDelete": "always",
-  "editor.hover.delay": 1500,
-  "editor.formatOnSave": true,
+  // "editor.hover.delay": 1500,
   "editor.quickSuggestions": {
-    "strings": true
+    "strings": "on"
   },
   "editor.accessibilitySupport": "off",
   "editor.guides.bracketPairs": true,
+  "editor.formatOnSave": true,
+  "editor.stickyScroll.enabled": false,
+  "editor.wordWrap": "on",
+  //
   // Workbench
+  //
   "workbench.editor.closeEmptyGroups": false,
   "workbench.colorTheme": "Monokai Pro (Filter Machine)",
   "workbench.editor.labelFormat": "short", // タブに表示する文字列の設定
@@ -29,7 +35,9 @@
   "workbench.startupEditor": "none",
   "workbench.colorCustomizations": {},
   "workbench.iconTheme": "Monokai Pro (Filter Machine) Icons",
+  //
   // Emmet
+  //
   "emmet.triggerExpansionOnTab": true, // TAB キーで Emmet を展開できるようにする
   "emmet.variables": { // Emmet で展開される HTML の言語を変更
     "lang": "ja"
@@ -43,57 +51,90 @@
     "postcss": "css"
   },
   "emmet.showSuggestionsAsSnippets": true,
+  //
   // Git
+  //
   "git.ignoreLimitWarning": true,
   "git.autofetch": true,
-  // Files
-  "files.associations": { // ファイルと言語の関連付けを変更
-    ".*lintrc": "json",
-    "*.svg": "html",
-    "*.mdx": "markdown",
-  },
   "files.useExperimentalFileWatcher": true,
-  "files.exclude": { // エクスプローラーから非表示にするファイル
-    "**/*.map": true,
-    "**/node_modules": true
-  },
+  //
   // HTML
+  //
   "html.format.contentUnformatted": "pre, code, textarea, title, h1, h2, h3, h4, h5, h6, p", // タグ内の記述はフォーマットしない
   "html.format.extraLiners": "", // head, body, /html タグの前に改行を入れない
   "html.format.unformatted": null, // フレージング・コンテンツ（旧インライン要素のようなタグ）はフォーマットしない
   "html.format.wrapLineLength": 0, // 行の文字数制限を無くし自動で改行させない
+  //
   // Window
+  //
   "window.openFoldersInNewWindow": "on", // 新規ワークスペースを別ウインドウで開く
   "window.title": "${activeEditorMedium}${separator}${rootName}", // ウインドウ上部に表示する文字列の設定
   "window.openFilesInNewWindow": "on",
+  //
   // Insert br Tag
+  //
   "insert-br-tag.enableOnLanguage": [
     "php",
     "html",
     "astro",
+    "typescript",
     "typescriptreact"
   ],
+  //
   // todo-tree
+  //
   "todo-tree.regex.regex": "(//|#|<!--|;|/?\\*|^|^[ \\t]*(-|\\d+.))\\s*($TAGS)",
   "todo-tree.general.tags": [
     "@todo",
     "TODO",
     "FIXME"
   ],
+  //
+  // Biome
+  //
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "editor.codeActionsOnSave": {
+  //   "quickfix.biome": "explicit",
+  //   "source.organizeImports.biome": "explicit"
+  // },
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "biomejs.biome"
+  // },
+  // "[javascriptreact]": {
+  //   "editor.defaultFormatter": "biomejs.biome"
+  // },
+  // "[typescript]": {
+  //   "editor.defaultFormatter": "biomejs.biome"
+  // },
+  // "[typescriptreact]": {
+  //   "editor.defaultFormatter": "biomejs.biome"
+  // },
+  //
   // Stylelint
+  //
   "stylelint.enable": true,
   "stylelint.validate": [
     "css",
     "scss"
   ],
+  //
+  // Formatter
+  //
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  //
   // Validate
+  //
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
+  //
   // ESLint
-  "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit"
-  },
+  //
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll": "explicit"
+  // },
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -101,36 +142,49 @@
     "typescript", // Enable .ts
     "typescriptreact" // Enable .tsx
   ],
+  //
   // Prettier
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  //
   "prettier.requireConfig": true, // 設定ファイルを優先,
+  //
   // Gitlens
+  //
   "gitlens.views.searchAndCompare.files.layout": "list",
   "gitlens.views.repositories.files.layout": "tree",
   "gitlens.views.repositories.includeWorkingTree": true,
   "gitlens.views.repositories.showUpstreamStatus": false,
+  //
   // CSV Preview
+  //
   "csv-preview.formatValues": "never",
+  //
   // Lang options
+  //
   "[markdown]": {
     "files.trimTrailingWhitespace": false // Markdown のファイルは行末の空白をトリミングしない
   },
   "[scss]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  //
   // tailwindCSS
+  //
   "tailwindCSS.classAttributes": [
     "class",
     "class:list",
+    "classes",
     "className",
     "clsx",
-    "classnames"
+    "classnames",
+    "tw"
   ],
   "tailwindCSS.experimental.classRegex": [
     [
@@ -138,7 +192,9 @@
       "(?:'|\"|`)([^']*)(?:'|\"|`)"
     ]
   ],
+  //
   // Other
+  //
   "security.workspace.trust.untrustedFiles": "open",
   "sync.gist": "4ad12b8657b7c42c93fb5bb7e13adaca",
   "diffEditor.renderSideBySide": false, // ホバーしたときに出る解説を消す
@@ -147,7 +203,9 @@
   "search.exclude": { // 検索対象外にするファイル設定（ files.exclude のファイルも含む）
     "**/tmp": true
   },
+  //
   // OpenInExternalApp
+  //
   "openInExternalApp.openMapper": [
     // {
     //     // represent file extension name
@@ -205,19 +263,44 @@
     }
   ],
   "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1"
+    "FIG_NEW_SESSION": "1",
+    "CW_NEW_SESSION": "1",
+    "Q_NEW_SESSION": "1"
   },
   "update.mode": "manual",
-  "[astro]": {
-    "editor.defaultFormatter": "astro-build.astro-vscode"
-  },
-  "editor.wordWrap": "on",
+  //
+  // GitLens
+  //
   "gitlens.gitCommands.skipConfirmations": [
     "fetch:command",
     "switch:command",
     "stash-push:command"
   ],
+  //
+  // GitHub
+  //
   "githubPullRequests.fileListLayout": "flat",
   "githubIssues.issueBranchTitle": "feature/issue#${issueNumber}",
   "githubIssues.workingIssueFormatScm": "${issueTitle} ${issueNumberLabel}",
+  "git.openRepositoryInParentFolders": "never",
+  //
+  // TypeScript
+  //
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  //
+  // cSpell
+  //
+  "cSpell.ignoreWords": [
+    "astro"
+  ],
+  //
+  //
+  //
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "sequence.replaceSelection": true,
+  "githubPullRequests.overrideDefaultBranch": "develop",
+  "githubPullRequests.assignCreated": "${user}",
+  "githubPullRequests.defaultMergeMethod": "squash",
+  "eslint.useFlatConfig": false,
 }
