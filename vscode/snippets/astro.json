@@ -6,7 +6,53 @@
   "HTML snippet: has class:list div": {
     "prefix": "..",
     "body": [
-      "<${2:div} class:list={[\"${1:className}\"]}${3}>${4:contents}</div>",
+      "<${3:div} class:list={[",
+      "  //",
+      "  [",
+      "    // ${1:Layout}",
+      "    \"${2:className}\"",
+      "  ],",
+      "]}${4}>${5:contents}</div>",
+    ]
+  },
+  "HTML snippet: class:list": {
+    "prefix": "ascl",
+    "body": [
+      "class:list={[",
+      "  //",
+      "  [",
+      "    // ${1:Layout}",
+      "    \"${2:className}\"",
+      "  ],",
+      "]}",
+    ]
+  },
+  "HTML snippet: widget class": {
+    "prefix": "aswc",
+    "body": [
+      "---",
+      "import ${1:Header} from \"../ui/${1:Header}.astro\";",
+      "---",
+      "",
+      "<astro-${2:fixed-header}>",
+      "  <${1:Header} />",
+      "</astro-${2:fixed-header}>",
+      "",
+      "<script>",
+      "  class ${3:AstroFixedHeader} extends HTMLElement {",
+      "    constructor() {",
+      "      super();",
+      "",
+      "      const ${4:fixedHeader} = this.querySelector(",
+      "        \"[data-${2:fixed-header}]\"",
+      "      ) as HTMLElement;",
+      "",
+      "      console.log(${4:fixedHeader});$5",
+      "    }",
+      "  }",
+      "",
+      "  customElements.define(\"astro-${2:fixed-header}\", ${3:AstroFixedHeader});",
+      "</script>",
     ]
   },
 }

@@ -1,0 +1,12 @@
+{
+  "HTML snippet: prop types": {
+    "prefix": "asprop",
+    "body": [
+      "type Props = {",
+      "  ${1:type}: ${2:string};",
+      "};",
+      "",
+      "const { ${1:type} } = Astro.props;",
+    ]
+  },
+}
