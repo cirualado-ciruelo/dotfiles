@@ -7,6 +7,16 @@ $ xcode-select --install
 $ cd dotfiles && make
 ```
 
+## Set GitHub
+
+```shell
+$ gh auth login
+
+# check
+$ ssh -T git@github.com
+$ gh auth status
+```
+
 ## Set HHKB.
 
 `wget https://origin.pfultd.com/downloads/hhkb/driver/HHKBProDriver5.1.dmg`
