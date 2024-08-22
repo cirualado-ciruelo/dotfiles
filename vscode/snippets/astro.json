@@ -1,6 +1,6 @@
 {
   "JS snippet: disable eslint comment": {
-    "prefix": "esdis",
+    "prefix": ";astroeslintdisablenextline",
     "body": "{ /* eslint-disable-next-line */ }"
   },
   "HTML snippet: has class:list div": {
@@ -16,7 +16,7 @@
     ]
   },
   "HTML snippet: class:list": {
-    "prefix": "ascl",
+    "prefix": ";astroclasslist",
     "body": [
       "class:list={[",
       "  //",
@@ -28,7 +28,7 @@
     ]
   },
   "HTML snippet: widget class": {
-    "prefix": "aswc",
+    "prefix": ";astrowidgetclass",
     "body": [
       "---",
       "import ${1:Header} from \"../ui/${1:Header}.astro\";",

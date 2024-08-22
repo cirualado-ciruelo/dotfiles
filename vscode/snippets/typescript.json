@@ -1,12 +1,18 @@
 {
   "HTML snippet: prop types": {
-    "prefix": "asprop",
+    "prefix": ";astroproptypes",
     "body": [
       "type Props = {",
       "  ${1:type}: ${2:string};",
       "};",
       "",
       "const { ${1:type} } = Astro.props;",
+    ]
+  },
+  "TypeScript snippet: types": {
+    "prefix": ";astrotypesclasslist",
+    "body": [
+      "AstroBuiltinAttributes[\"class:list\"]",
     ]
   },
 }
