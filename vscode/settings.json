@@ -12,7 +12,7 @@
   "editor.find.loop": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "boundary",
-  "editor.fontFamily": "'源ノ角ゴシック Code JP N'",
+  "editor.fontFamily": "'Ricty Diminished'",
   "editor.detectIndentation": false,
   "editor.useTabStops": false,
   "editor.autoClosingDelete": "always",
@@ -25,6 +25,11 @@
   "editor.formatOnSave": true,
   "editor.stickyScroll.enabled": false,
   "editor.wordWrap": "on",
+  "editor.fontSize": 14,
+  //
+  // Terminal
+  //
+  "terminal.integrated.fontSize": 14,
   //
   // Workbench
   //
@@ -303,4 +308,5 @@
   "githubPullRequests.assignCreated": "${user}",
   "githubPullRequests.defaultMergeMethod": "squash",
   "eslint.useFlatConfig": false,
+  "window.restoreWindows": "none",
 }
