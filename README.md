@@ -75,3 +75,15 @@ $ gh auth status
 # Update .Brewfile(sync ~/.Brewfile)
 brew bundle dump --file .Brewfile --force
 ```
+
+### Branch
+
+1. 使用する端末ごとのブランチを切る
+2. アップデートしたらpushしていく
+
+違う端末に切り替えた時
+
+1. 今いるブランチからmainにチェックアウト
+2. 最新の端末ブランチを回収
+3. 端末ブランチに帰る
+4. 他の端末に切り替えたらこれを繰り返す
