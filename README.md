@@ -19,7 +19,10 @@ $ gh auth status
 
 ## Set HHKB.
 
-`wget https://origin.pfultd.com/downloads/hhkb/driver/HHKBProDriver5.1.dmg`
+- Driver DL: `wget https://origin.pfultd.com/downloads/hhkb/driver/HHKBProDriver5.1.dmg`
+- fn settings: 
+  1. システム環境設定＞キーボード＞キーボードショートカットに進み、「F1、F2などのキーを標準ファンクションキーとして使用」にチェック
+  2. システム環境設定＞キーボード＞キーボードショートカット＞キーボードに進み、「次のウィンドウを操作対象にする」 を `⌘@` から `⌘F1`
 
 ## Set Google IME.
 

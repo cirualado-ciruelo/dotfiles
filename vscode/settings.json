@@ -12,7 +12,7 @@
   "editor.find.loop": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "boundary",
-  "editor.fontFamily": "'Ricty Diminished'",
+  // "editor.fontFamily": "'Ricty Diminished'",
   "editor.detectIndentation": false,
   "editor.useTabStops": false,
   "editor.autoClosingDelete": "always",
@@ -25,11 +25,11 @@
   "editor.formatOnSave": true,
   "editor.stickyScroll.enabled": false,
   "editor.wordWrap": "on",
-  "editor.fontSize": 14,
+  // "editor.fontSize": 14,
   //
   // Terminal
   //
-  "terminal.integrated.fontSize": 14,
+  // "terminal.integrated.fontSize": 14,
   //
   // Workbench
   //
@@ -97,7 +97,7 @@
   //
   // Biome
   //
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
   // "editor.codeActionsOnSave": {
   //   "quickfix.biome": "explicit",
   //   "source.organizeImports.biome": "explicit"
@@ -127,6 +127,9 @@
   //
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
   },
   //
   // Validate
@@ -205,8 +208,12 @@
   "diffEditor.renderSideBySide": false, // ホバーしたときに出る解説を消す
   "diffEditor.ignoreTrimWhitespace": false,
   "explorer.confirmDelete": false, // ファイル削除時の確認を表示しない
+  "files.exclude": {
+    "**/node_modules": true
+  },
   "search.exclude": { // 検索対象外にするファイル設定（ files.exclude のファイルも含む）
-    "**/tmp": true
+    "**/tmp": true,
+    "**/node_modules": true
   },
   //
   // OpenInExternalApp
@@ -297,7 +304,14 @@
   // cSpell
   //
   "cSpell.ignoreWords": [
-    "astro"
+    "astro",
+    "gsap"
+  ],
+  //
+  // PHP intelephense
+  //
+  "intelephense.stubs": [
+    "wordpress"
   ],
   //
   //
@@ -309,4 +323,5 @@
   "githubPullRequests.defaultMergeMethod": "squash",
   "eslint.useFlatConfig": false,
   "window.restoreWindows": "none",
+  "explorer.compactFolders": false,
 }
