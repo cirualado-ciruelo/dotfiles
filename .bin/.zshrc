@@ -7,3 +7,4 @@ alias mypub="open https://github.com/nf-matsumura.keys"
 
 # Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
+export PATH="/usr/local/opt/php@8.2/bin:$PATH"
