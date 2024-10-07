@@ -301,10 +301,16 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.preferences.importModuleSpecifier": "non-relative",
   //
+  // PHP
+  //
+  "php.validate.executablePath": "/usr/local/opt/php@8.2/bin/php",
+  //
   // cSpell
   //
   "cSpell.ignoreWords": [
     "astro",
+    "daisyui",
+    "eyecatch",
     "gsap"
   ],
   //
@@ -322,6 +328,7 @@
   "githubPullRequests.assignCreated": "${user}",
   "githubPullRequests.defaultMergeMethod": "squash",
   "eslint.useFlatConfig": false,
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
   "window.restoreWindows": "none",
   "explorer.compactFolders": false,
 }
