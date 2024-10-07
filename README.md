@@ -19,7 +19,10 @@ $ gh auth status
 
 ## Set HHKB.
 
-`wget https://origin.pfultd.com/downloads/hhkb/driver/HHKBProDriver5.1.dmg`
+- Driver DL: `wget https://origin.pfultd.com/downloads/hhkb/driver/HHKBProDriver5.1.dmg`
+- fn settings: 
+  1. システム環境設定＞キーボード＞キーボードショートカットに進み、「F1、F2などのキーを標準ファンクションキーとして使用」にチェック
+  2. システム環境設定＞キーボード＞キーボードショートカット＞キーボードに進み、「次のウィンドウを操作対象にする」 を `⌘@` から `⌘F1`
 
 ## Set Google IME.
 
@@ -72,3 +75,15 @@ $ gh auth status
 # Update .Brewfile(sync ~/.Brewfile)
 brew bundle dump --file .Brewfile --force
 ```
+
+### Branch
+
+1. 使用する端末ごとのブランチを切る
+2. アップデートしたらpushしていく
+
+違う端末に切り替えた時
+
+1. 今いるブランチからmainにチェックアウト
+2. 最新の端末ブランチを回収
+3. 端末ブランチに帰る
+4. 他の端末に切り替えたらこれを繰り返す
