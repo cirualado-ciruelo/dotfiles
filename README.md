@@ -69,6 +69,13 @@ $ gh auth status
 
 ## Maintenance
 
+### Brew list
+
+```shell
+# アプリの関連データも消す
+uninstall-cli.sh /Applications/tableplus.app
+```
+
 ### Brewfile
 
 ```shell

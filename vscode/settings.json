@@ -7,8 +7,7 @@
   "editor.minimap.showSlider": "always", // マウスでの複数選択時の修飾キーを変更
   "editor.renderControlCharacters": true, // 制御文字を表示
   "editor.renderLineHighlight": "all", // 半角スペースを常に表示
-  "editor.snippetSuggestions": "top", // Emmet の候補を表示
-  "editor.minimap.enabled": false,
+  "editor.snippetSuggestions": "top",
   "editor.find.loop": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "boundary",
@@ -92,7 +91,10 @@
   "todo-tree.general.tags": [
     "@todo",
     "TODO",
-    "FIXME"
+    "FIXME",
+    "Ref",
+    "todo",
+    "@todo Ref:"
   ],
   //
   // Biome
@@ -129,6 +131,7 @@
     "editor.defaultFormatter": "astro-build.astro-vscode"
   },
   "[php]": {
+    "editor.formatOnSave": false,
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
   },
   //
@@ -178,6 +181,9 @@
   "[html]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[twig]": {
+    "editor.formatOnSave": false
   },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -308,12 +314,6 @@
     "gsap"
   ],
   //
-  // PHP intelephense
-  //
-  "intelephense.stubs": [
-    "wordpress"
-  ],
-  //
   //
   //
   "diffEditor.hideUnchangedRegions.enabled": true,
@@ -324,4 +324,86 @@
   "eslint.useFlatConfig": false,
   "window.restoreWindows": "none",
   "explorer.compactFolders": false,
+  "editor.minimap.enabled": false,
+  "intelephense.stubs": [
+    "apache",
+    "bcmath",
+    "bz2",
+    "calendar",
+    "com_dotnet",
+    "Core",
+    "ctype",
+    "curl",
+    "date",
+    "dba",
+    "dom",
+    "enchant",
+    "exif",
+    "FFI",
+    "fileinfo",
+    "filter",
+    "fpm",
+    "ftp",
+    "gd",
+    "gettext",
+    "gmp",
+    "hash",
+    "iconv",
+    "imap",
+    "intl",
+    "json",
+    "ldap",
+    "libxml",
+    "mbstring",
+    "meta",
+    "mysqli",
+    "oci8",
+    "odbc",
+    "openssl",
+    "pcntl",
+    "pcre",
+    "PDO",
+    "pdo_ibm",
+    "pdo_mysql",
+    "pdo_pgsql",
+    "pdo_sqlite",
+    "pgsql",
+    "Phar",
+    "posix",
+    "pspell",
+    "random",
+    "readline",
+    "Reflection",
+    "session",
+    "shmop",
+    "SimpleXML",
+    "snmp",
+    "soap",
+    "sockets",
+    "sodium",
+    "SPL",
+    "sqlite3",
+    "standard",
+    "superglobals",
+    "sysvmsg",
+    "sysvsem",
+    "sysvshm",
+    "tidy",
+    "tokenizer",
+    "xml",
+    "xmlreader",
+    "xmlrpc",
+    "xmlwriter",
+    "xsl",
+    "Zend OPcache",
+    "zip",
+    "zlib",
+    "wordpress"
+  ],
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }
