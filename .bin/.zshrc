@@ -6,6 +6,8 @@ alias gle="ls -l ${HOME}/Library/Application\ Support/Google/Chrome/Default/Exte
 alias mypub="open https://github.com/nf-matsumura.keys"
 alias uc="~/.script/convert_unit.sh"
 alias cdr="cd ~/Work/repositories/ && ls"
+alias git-sw-w='git config --global user.name "nf-matsumura" && git config user.email "matsumura@newfolk.jp"'
+alias git-sw-p='git config --global user.name "cirualado-ciruelo" && git config user.email "cirualado.ciruelo@gmail.com"'
 
 # Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
