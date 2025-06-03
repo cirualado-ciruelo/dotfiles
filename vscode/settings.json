@@ -9,13 +9,12 @@
   "editor.renderLineHighlight": "all", // 半角スペースを常に表示
   "editor.snippetSuggestions": "top",
   "editor.find.loop": false,
-  "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "boundary",
   // "editor.fontFamily": "'Ricty Diminished'",
   "editor.detectIndentation": false,
   "editor.useTabStops": false,
   "editor.autoClosingDelete": "always",
-  // "editor.hover.delay": 1500,
+  "editor.hover.delay": 500,
   "editor.quickSuggestions": {
     "strings": "on"
   },
@@ -185,6 +184,10 @@
   "[twig]": {
     "editor.formatOnSave": false
   },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -198,12 +201,29 @@
     "className",
     "clsx",
     "classnames",
-    "tw"
+    "tw",
+    "cn",
   ],
   "tailwindCSS.experimental.classRegex": [
     [
-      "clsx\\(([^)]*)\\)",
-      "(?:'|\"|`)([^']*)(?:'|\"|`)"
+      "cn\\(([^)]*)\\)",
+      "[\"'`]([^\"'`]*)[\"'`]"
+    ],
+    [
+      "cn\\(([^)]*)\\)",
+      "'([^']*)'"
+    ],
+    [
+      "cn\\(([^)]*)\\)",
+      "\"([^\"]*)\""
+    ],
+    [
+      "cn\\(([^)]*)\\)",
+      "`([^`]*)`"
+    ],
+    [
+      "cn\\(([^)]*)\\)",
+      "\\[[^\\]]*\\]"
     ]
   ],
   //
@@ -220,6 +240,9 @@
   "search.exclude": { // 検索対象外にするファイル設定（ files.exclude のファイルも含む）
     "**/tmp": true,
     "**/node_modules": true
+  },
+  "files.watcherExclude": {
+    "**/.next/**": true,
   },
   //
   // OpenInExternalApp
@@ -406,4 +429,64 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "markdown-preview-enhanced.codeBlockTheme": "github-dark.css",
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "githubIssues.queries": [
+    {
+      "label": "Milestone",
+      "query": "state:open repo:${owner}/${repository} sort:updated-desc",
+      "groupBy": [
+        "milestone"
+      ],
+    },
+    {
+      "label": "♻️ Refactoring",
+      "query": "state:open label:refactoring repo:${owner}/${repository} sort:updated-desc",
+      "groupBy": [
+        "milestone"
+      ],
+    },
+    {
+      "label": "❗️ Bug",
+      "query": "state:open label:bug repo:${owner}/${repository} sort:updated-desc"
+    },
+    {
+      "label": "🤖 Core",
+      "query": "state:open label:core repo:${owner}/${repository} sort:updated-desc",
+      "groupBy": [
+        "milestone"
+      ]
+    },
+    {
+      "label": "🪄 Interaction",
+      "query": "state:open label:interaction repo:${owner}/${repository} sort:updated-desc",
+      "groupBy": [
+        "milestone"
+      ]
+    },
+    {
+      "label": "🫥 Wontfix",
+      "query": "state:open label:wontfix repo:${owner}/${repository} sort:updated-desc",
+      "groupBy": [
+        "milestone"
+      ]
+    },
+    {
+      "label": "自分の問題",
+      "query": "is:open assignee:${user} repo:${owner}/${repository}",
+      "groupBy": [
+        "milestone"
+      ]
+    },
+    {
+      "label": "作成された問題(No labels)",
+      "query": "state:open no:label repo:${owner}/${repository} sort:created-desc"
+    }
+  ],
+  "typescript.updateImportsOnFileMove.enabled": "never",
 }
