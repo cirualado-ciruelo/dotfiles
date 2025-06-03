@@ -5,6 +5,7 @@ alias gle="ls -l ${HOME}/Library/Application\ Support/Google/Chrome/Default/Exte
 
 alias mypub="open https://github.com/nf-matsumura.keys"
 alias uc="~/.script/convert_unit.sh"
+alias cdr="cd ~/Work/repositories/ && ls"
 
 # Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
