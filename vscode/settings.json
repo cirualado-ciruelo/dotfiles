@@ -341,9 +341,6 @@
   //
   "diffEditor.hideUnchangedRegions.enabled": true,
   "sequence.replaceSelection": true,
-  "githubPullRequests.overrideDefaultBranch": "develop",
-  "githubPullRequests.assignCreated": "${user}",
-  "githubPullRequests.defaultMergeMethod": "squash",
   "eslint.useFlatConfig": false,
   "window.restoreWindows": "none",
   "explorer.compactFolders": false,
